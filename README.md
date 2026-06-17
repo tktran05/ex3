@@ -2,6 +2,8 @@
 
 **Exercise 3 — Digital Content Programming**
 
+Link github chứa toàn bộ kết quả: https://github.com/tktran05/ex3
+
 This repository contains **two versions** of the project:
 
 | Version | Folder | Tech |
