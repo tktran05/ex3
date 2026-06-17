@@ -1,0 +1,27 @@
+# ===== WorldCup Insider 2026 — real AI models (image-driven) =====
+#
+# 1) Install PyTorch with CUDA FIRST (matches your GPU/driver):
+#      pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+# 2) Then install the rest:
+#      pip install -r requirements.txt
+
+# Module 1 — Computer Vision (YOLOv8); pulls in opencv + numpy
+ultralytics>=8.2.0
+
+# Module 2 — Image Captioning (BLIP)
+transformers>=4.44.0
+
+# Module 3 — Social-media text (Google Gemini)
+google-generativeai>=0.8.0
+python-dotenv>=1.0.0
+
+# Module 4 — Compositing onto your real photos
+pillow>=10.0.0
+
+# Jersey-colour recognition (KMeans)
+scikit-learn>=1.4.0
+
+# Stage 3 — UI (timeline, interactions, analytics)
+streamlit>=1.37.0
+pandas>=2.2.0

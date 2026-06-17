@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WorldCup Insider 2026 — AI Social Media Actor</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== Persona / Page header ===== -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo" id="persona-avatar">🌍⚽</span>
+      <div>
+        <div class="brand-name" id="persona-name">WorldCup Insider 2026</div>
+        <div class="brand-handle" id="persona-handle">@worldcup_insider26</div>
+      </div>
+    </div>
+    <div class="brand-meta">
+      <span class="pill" id="persona-style">Enthusiastic · Friendly · Knowledgeable</span>
+      <span class="pill ai">🤖 AI Actor</span>
+    </div>
+  </header>
+
+  <!-- ===== Profile banner ===== -->
+  <section class="profile">
+    <div class="profile-stats">
+      <div><b id="stat-posts">0</b><span>Posts</span></div>
+      <div><b>1.2M</b><span>Followers</span></div>
+      <div><b>48</b><span>Teams covered</span></div>
+      <div><b>16</b><span>Host cities</span></div>
+    </div>
+    <p class="bio">⚽ Your AI football journalist for FIFA World Cup 2026 🇺🇸🇨🇦🇲🇽 ·
+      Previews, summaries, player profiles, stadiums & fan fun · Audience: fans 18–35 🔥</p>
+    <div class="actions">
+      <button id="btn-regen" class="btn primary">🔄 Generate new posts</button>
+      <button id="btn-clear-mem" class="btn">🧹 Clear follower memory</button>
+    </div>
+  </section>
+
+  <!-- ===== Tabs ===== -->
+  <nav class="tabs">
+    <button class="tab on" data-panel="panel-feed">📰 Timeline</button>
+    <button class="tab" data-panel="panel-analytics">📈 Analytics</button>
+    <button class="tab" data-panel="panel-report">🔬 Image Analysis Report</button>
+    <button class="tab" data-panel="panel-memory">🧠 Memory DB</button>
+  </nav>
+
+  <main class="container">
+    <!-- Feed -->
+    <section id="panel-feed" class="panel on">
+      <div id="filters" class="filters"></div>
+      <div id="feed" class="feed"></div>
+    </section>
+
+    <!-- Analytics -->
+    <section id="panel-analytics" class="panel">
+      <div class="cards">
+        <div class="card"><span class="ck">Total likes</span><b id="an-likes">0</b></div>
+        <div class="card"><span class="ck">Total posts</span><b id="an-posts">0</b></div>
+        <div class="card"><span class="ck">Followers</span><b id="an-followers">0</b></div>
+        <div class="card"><span class="ck">Avg engagement</span><b id="an-eng">0%</b></div>
+      </div>
+      <h3>Likes by content category</h3>
+      <div id="an-bars" class="bars"></div>
+    </section>
+
+    <!-- Image Analysis Report (Stage 1 deliverable) -->
+    <section id="panel-report" class="panel">
+      <p class="muted">Stage 1 deliverable — Computer Vision (Module 1) + Captioning (Module 2) over
+        <b id="report-count">0</b> source images. JSON follows the spec contract.</p>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Image type</th><th>Subject</th><th>Generated caption</th><th>CV JSON</th></tr></thead>
+          <tbody id="report-body"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Memory DB -->
+    <section id="panel-memory" class="panel">
+      <p class="muted">Advanced Challenge — the actor remembers followers and personalizes replies.
+        Comment on any post (mention your team!) to appear here.</p>
+      <div id="memory-list" class="memory"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>🤖 <b>WorldCup Insider 2026</b> — AI Social-Media Actor · Digital Content Programming · Exercise 3</p>
+    <p class="muted">Simulated social network. All AI content is auto-generated for educational purposes —
+      players, results & stats are illustrative. #ResponsibleAI</p>
+  </footer>
+
+  <!-- Pipeline modules -->
+  <script src="js/data.js"></script>
+  <script src="js/vision.js"></script>
+  <script src="js/captioning.js"></script>
+  <script src="js/generator.js"></script>
+  <script src="js/visuals.js"></script>
+  <script src="js/memory.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
