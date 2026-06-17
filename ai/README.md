@@ -3,6 +3,8 @@
 A FIFA World Cup 2026 AI influencer built with **real AI models**. It takes the
 **football photos you provide** and turns each one into a social-media post.
 
+Link github: https://github.com/tktran05/ex3
+
 | Module | Real model / tool | File |
 |--------|-------------------|------|
 | **1 · Computer Vision** | **YOLOv8** (ultralytics) — player/ball/crowd detection + jersey-colour recognition → spec JSON | `module1_vision.py` |
